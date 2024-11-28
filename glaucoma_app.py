@@ -87,7 +87,7 @@ def main():
         - Vision Simulator: Visualize the impact of glaucoma on vision.
         - Detection: Upload retina images to analyze glaucoma risks.
         """)
-        st.image("C:/Users/Axioo/Documents/Glaucoma Imaging Project/uploads/glaucoma-web.jpeg", 
+        st.image("glaucoma-web.jpeg", 
                  caption="Join us in preventing glaucoma blindness.", use_container_width=True)
 
     elif choice == "Vision Simulator":
@@ -99,16 +99,16 @@ def main():
 
         # Menampilkan gambar berdasarkan tingkat keparahan
         if severity < 25:
-            img = Image.open("C:/Users/Axioo/Documents/Glaucoma Imaging Project/uploads/Normal.jpeg")
+            img = Image.open("Normal.jpeg")
             st.image(img, caption="Normal Vision", use_container_width=True)
         elif severity < 50:
-            img = Image.open("C:/Users/Axioo/Documents/Glaucoma Imaging Project/uploads/Mild.jpeg")
+            img = Image.open("Mild.jpeg")
             st.image(img, caption="Early Glaucoma", use_container_width=True)
         elif severity < 75:
-            img = Image.open("C:/Users/Axioo/Documents/Glaucoma Imaging Project/uploads/Medium.jpeg")
+            img = Image.open("Medium.jpeg")
             st.image(img, caption="Advanced Glaucoma", use_container_width=True)
         else:
-            img = Image.open("C:/Users/Axioo/Documents/Glaucoma Imaging Project/uploads/Severe.jpeg")
+            img = Image.open("Severe.jpeg")
             st.image(img, caption="Severe Glaucoma", use_container_width=True)
 
     elif choice == "Detection":
